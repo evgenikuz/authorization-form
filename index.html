@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <section class="main">
+            <img class="main__picture" src="./img/Illustration Picture.png">
+            <h1 class="main__title">Welcome</h1>
+            <p class="main__welcome-words">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+            <button class="main__create-account-btn button">Create Account</button>
+            <button class="main__login-btn button">Login</button>
+            <p class="main__copyright">All Right Reserved @2021</p>
+    </section>
+    <div class="cover d-none"></div>
+    <section class="registration-form hidden">
+        <button class="registration-form__close-btn">
+            <img src="./icons/Close.svg">
+        </button>
+        <p class="registration-form__greeting">Hello...</p>
+        <h1 class="registration-form__register">Register</h1>
+        <div class="registration-form__inputs">
+            <div class="complex-input">
+                <p class="complex-input__name">username/email</p>
+                <input class="complex-input__input text-input" type="text" placeholder="username/email">
+            </div>
+            <input class="course text-input" placeholder="course" type="text">
+            <div class="password-input">
+                <input class="password-input__input text-input" placeholder="password" type="password">
+                <button class="password-input__lock"><img src="./icons/Lock.svg"></button>
+            </div>
+            <div class="password-input">
+                <input class="password-input__input text-input" placeholder="confirm password" type="password">
+                <button class="password-input__lock"><img src="./icons/Lock.svg"></button>        
+            </div>
+        </div>
+        <button class="registration-form__register-btn button">Register</button>
+        <p class="registration-form__have-account">Already have account? <button class="registration-form__login-inline-btn">Login</button></p>
+    </section>
+    <section class="login-form hidden">
+        <button class="login-form__close-btn">
+            <img src="./icons/Close.svg">
+        </button>
+        <p class="login-form__greeting">Welcome Back!!!</p>
+        <h1 class="login-form__register">Login</h1>
+        <div class="login-form__inputs">
+            <div class="complex-input">
+                <p class="complex-input__name">username/email</p>
+                <input class="complex-input__input text-input" type="text" placeholder="username/email">
+            </div>
+            <div class="password-input">
+                <input class="password-input__input text-input" placeholder="password" type="password">
+                <button class="password-input__lock"><img src="./icons/Lock.svg"></button>
+            </div>
+        </div>
+        <div class="login-form__extra">
+            <label class="login-form__remember-me">
+                <input class='login-form__checkbox' type="checkbox" name="remember-me" id="remember-me">
+                <p>Remember me</p>
+            </label>
+            <button class="login-form__forgot-password-btn">Forgot password?</button>
+        </div>
+        <button class="login-form__register-btn button">Register</button>
+        <p class="login-form__dont-have-account">Don't have an account? <button class="login-form__register-inline-btn">Register</button></p>
+    </section>
+    <script src="./script.js"></script>
 </body>
 </html>
